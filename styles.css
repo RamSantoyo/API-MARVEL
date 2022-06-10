@@ -1,0 +1,127 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-principal: 'Montserrat', sans-serif;
+
+    /* Tamaño */
+    --delgada: 100;
+    --regular : 300;
+    --grande: 500;
+
+    /* Colores */
+    --naranja: #ee4b00;
+    --gris: #4e4e4e;
+    --gris-claro: #ececec;
+    --blanco: #ffffff;
+    --negro: #1a1a1a;
+    --rojo: #d83333;
+    --amarillo: #ffbb00;
+    
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: var(--negro);    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-principal);
+    text-transform: uppercase;
+    font-weight:var(--grande);
+    text-align: center;    
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style:none;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.espacio{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*==================================
+Header
+====================================*/
+header {
+    background-image: url(./recursos/marvel-logo.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 10rem;
+}
+/*==================================
+Cards
+====================================*/
+.card{
+   background-color: var(--gris-claro);
+   padding: 2rem; 
+   text-align: center;
+   border-radius: 1rem;
+}
+.card a{
+    color: var(--negro);
+    font-weight: bold;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+}
